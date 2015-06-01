@@ -44,6 +44,8 @@ public class ImageProcessing {
 
 	private ImageCircleActions circleActions = new ImageCircleActions();
 
+	private ImageArrowheadActions arrowheadActions = new ImageArrowheadActions();
+
 	private FilterValidationHelper filterValidationHelper = new FilterValidationHelper();
 
 	public ImageDrawEntity getImage() {
@@ -401,8 +403,14 @@ public class ImageProcessing {
 				TextHorizontalPosition.LEFT, TextVerticalPosition.BASELINE);
 	}
 
-	public void drawCircle(Color color, Point point, int radius) {
-		circleActions.drawCircle(image, color, point, radius);
+	public void drawCircle(Color color, Point point, int radius, float thick) {
+		circleActions.drawCircle(image, color, point, radius, thick);
+	}
+
+	public void drawArrowHead(Color color, Point startingPoint,
+			Point endingPoint, float thick) {
+		arrowheadActions.drawArrowHead(image, color, startingPoint,
+				endingPoint, thick);
 	}
 
 	/**
