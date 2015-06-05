@@ -7,9 +7,9 @@ import pl.vgtworld.imagedraw.ImageType;
 
 class ImageTypeMapper {
 	
-	private static final Map<String, ImageType> EXTENSION_TO_IMAGE_TYPE = new HashMap<>();
+	private static final Map<String, ImageType> EXTENSION_TO_IMAGE_TYPE = new HashMap<String, ImageType>();
 	
-	private static final Map<ImageType, String> IMAGE_TYPE_TO_EXTENSION = new HashMap<>();
+	private static final Map<ImageType, String> IMAGE_TYPE_TO_EXTENSION = new HashMap<ImageType, String>();
 	
 	static {
 		EXTENSION_TO_IMAGE_TYPE.put(".jpg", ImageType.JPEG);

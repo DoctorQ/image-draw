@@ -12,7 +12,7 @@ import pl.vgtworld.imagedraw.filters.matrix.MatrixFilter;
  */
 public class EmbossFilter implements ImageDrawFilter {
 	
-	private static final Map<EmbossDirection, float[][]> MATRICES = new HashMap<>();
+	private static final Map<EmbossDirection, float[][]> MATRICES = new HashMap<EmbossDirection, float[][]>();
 	
 	private EmbossDirection direction;
 	
